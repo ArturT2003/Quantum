@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f7f8ff" />
+    <meta name="description" content="QuantumAI interactive mobile trading interface demo" />
+    <title>QuantumAI — Trading Demo</title>
+    <link rel="icon" type="image/png" sizes="1254x1254" href="./favicon-qai.png" />
+    <link rel="apple-touch-icon" href="./favicon-qai.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="device-shell" id="app">
+      <div class="status-bar" aria-hidden="true">
+        <span class="status-left"><b id="clock">17:08</b><svg class="moon-icon" viewBox="0 0 24 24"><path d="M20.3 15.8A8.7 8.7 0 0 1 8.2 3.7 8.8 8.8 0 1 0 20.3 15.8Z"/></svg></span>
+        <span class="status-right">
+          <span class="cellular"><i></i><i></i><i></i><i></i></span>
+          <svg class="wifi-icon" viewBox="0 0 24 24"><path d="M1.5 8.8C7.4 3.6 16.6 3.6 22.5 8.8l-2.7 2.9C15.5 7.9 8.5 7.9 4.2 11.7L1.5 8.8Zm5.3 5.3c2.9-2.5 7.5-2.5 10.4 0l-2.6 2.8c-1.4-1.2-3.8-1.2-5.2 0l-2.6-2.8ZM10.4 19.5a1.6 1.6 0 1 1 3.2 0 1.6 1.6 0 0 1-3.2 0Z"/></svg>
+          <span class="battery"><i class="battery-level"></i><b>26</b></span>
+        </span>
+      </div>
+
+      <section class="view splash active" data-view="splash" aria-label="QuantumAI loading screen">
+        <div class="splash-orb orb-one"></div>
+        <div class="splash-orb orb-two"></div>
+        <div class="brand-lockup">
+          <span class="wallet-mark"><i></i></span>
+          <span>Quantum<span>AI</span></span>
+        </div>
+        <div class="splash-progress"><i></i></div>
+      </section>
+
+      <section class="view page" data-view="market">
+        <header class="page-header compact">
+          <span></span>
+          <button class="icon-btn profile-btn" type="button" data-open-settings aria-label="Open settings">
+            <svg class="person-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7.5" r="4"/><path d="M4.7 21c.6-4.2 3.3-6.5 7.3-6.5s6.7 2.3 7.3 6.5"/></svg>
+          </button>
+        </header>
+
+        <article class="hero-card">
+          <div class="hero-glow"></div>
+          <p data-i18n="heroKicker">QUANTUM AI · BOURSE INTELLIGENTE</p>
+          <h1 data-i18n="heroTitle">INVESTISSEZ DANS<br />VOTRE AVENIR</h1>
+          <h2 data-i18n="heroSubtitle">La plateforme d’investissement automatisé par l’IA.</h2>
+          <button class="white-cta" type="button" data-go="dashboard">
+            <span data-i18n="startNow">Commencer maintenant</span><b>→</b>
+          </button>
+        </article>
+
+        <section class="section-block assets-block">
+          <div class="section-heading">
+            <h2 data-i18n="tradable">Actifs négociables</h2>
+            <span data-i18n="seeAll">Voir tout</span>
+          </div>
+          <div class="asset-list">
+            <article class="asset-row">
+              <span class="brand-logo"><img src="./assets/apple.svg" alt="Apple" /></span>
+              <span class="asset-name"><b>Apple Inc.</b><small>AAPL</small></span>
+              <svg class="spark" viewBox="0 0 120 40" aria-hidden="true"><path d="M2 30 13 15 25 24 36 12 48 18 60 32 72 12 83 17 96 5 108 27 118 13"/></svg>
+              <span class="asset-price"><b>182.40</b><small>+2.15%</small></span>
+            </article>
+            <article class="asset-row">
+              <span class="brand-logo"><img src="./assets/nvidia.svg" alt="NVIDIA" /></span>
+              <span class="asset-name"><b>NVIDIA Corp.</b><small>NVDA</small></span>
+              <svg class="spark" viewBox="0 0 120 40" aria-hidden="true"><path d="M2 30 13 9 25 16 36 5 49 30 61 12 73 17 86 3 98 22 108 10 118 17"/></svg>
+              <span class="asset-price"><b>128.50</b><small>+3.42%</small></span>
+            </article>
+            <article class="asset-row">
+              <span class="brand-logo"><img src="./assets/microsoft.svg" alt="Microsoft" /></span>
+              <span class="asset-name"><b>Microsoft Corp.</b><small>MSFT</small></span>
+              <svg class="spark" viewBox="0 0 120 40" aria-hidden="true"><path d="M2 31 13 11 24 23 36 4 48 20 60 8 72 29 84 12 96 3 118 25"/></svg>
+              <span class="asset-price"><b>428.15</b><small>+1.68%</small></span>
+            </article>
+            <article class="asset-row">
+              <span class="brand-logo"><img src="./assets/tesla.svg" alt="Tesla" /></span>
+              <span class="asset-name"><b>Tesla Inc.</b><small>TSLA</small></span>
+              <svg class="spark" viewBox="0 0 120 40" aria-hidden="true"><path d="M2 30 14 13 25 22 37 5 49 25 61 17 73 22 85 2 98 18 108 8 118 23"/></svg>
+              <span class="asset-price"><b>246.30</b><small>+4.05%</small></span>
+            </article>
+          </div>
+        </section>
+        <nav class="bottom-nav" data-active="home"></nav>
+      </section>
+
+      <section class="view page" data-view="dashboard">
+        <header class="page-header compact">
+          <span></span>
+          <button class="icon-btn profile-btn" type="button" data-open-settings aria-label="Open settings"><svg class="person-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7.5" r="4"/><path d="M4.7 21c.6-4.2 3.3-6.5 7.3-6.5s6.7 2.3 7.3 6.5"/></svg></button>
+        </header>
+
+        <section class="balance-card">
+          <b data-current-balance>CHF 2’150</b>
+          <span data-i18n="availableBalance">Solde disponible</span>
+          <i></i>
+        </section>
+
+        <section class="launch-card">
+          <span data-i18n="minimumDeposit">Dépôt minimum</span>
+          <b data-investment>CHF 200</b>
+          <button class="primary-btn" id="prepareTrade" type="button"><span class="play">▷</span><span data-i18n="launchOperation">Lancer l’opération</span></button>
+        </section>
+
+        <section class="quick-actions">
+          <button type="button" data-go="trade"><i>⌁</i><span data-i18n="trading">Trading</span></button>
+          <button type="button"><i>▣</i><span data-i18n="assets">Actifs</span></button>
+          <button type="button" data-go="withdrawal"><i>⇄</i><span data-i18n="withdrawal">Retrait</span></button>
+        </section>
+
+        <section class="section-block activity-block">
+          <div class="section-heading"><h2 data-i18n="recentActivity">Activité récente</h2><span data-i18n="seeAll">Voir tout</span></div>
+          <div class="activity-list">
+            <article><span><b data-i18n="withdrawFunds">Retirer les fonds</b><small>22.09.2026 · UBS</small></span><strong class="negative" data-activity-value="-350">−CHF 350</strong></article>
+            <article><span><b>+ AAPL</b><small>22.09.2026</small></span><strong class="positive" data-activity-value="350">+CHF 350</strong></article>
+            <article><span><b data-i18n="withdrawFunds">Retirer les fonds</b><small>21.09.2026 · PostFinance</small></span><strong class="negative" data-activity-value="-343">−CHF 343</strong></article>
+          </div>
+        </section>
+        <nav class="bottom-nav" data-active="home"></nav>
+      </section>
+
+      <section class="view page trade-page" data-view="trade">
+        <header class="trade-header">
+          <button class="icon-btn" type="button" data-go="dashboard" aria-label="Back">←</button>
+          <span class="stock-icon"><img src="./assets/apple.svg" alt="Apple" /></span>
+          <span class="stock-name"><b>Apple Inc.</b><small>AAPL</small></span>
+          <span class="stock-rate">+2,15% ↗</span>
+        </header>
+
+        <section class="trade-summary">
+          <span id="tradeStatus" data-i18n="launchOperation">Lancer l’opération</span>
+          <b id="liveAmount" data-live-amount>CHF 2’150</b>
+        </section>
+
+        <div class="periods"><span>1m</span><span>5m</span><span>15m</span><b>1h</b><span>1d</span></div>
+
+        <section class="chart-card">
+          <div class="chart-pills"><span><i></i> LIVE</span><b data-chart-goal>CHF 2’500</b></div>
+          <canvas id="tradeChart" width="800" height="600" aria-label="Animated candlestick trading chart"></canvas>
+          <div class="chart-times"><span>09:30</span><span>11:00</span><span>12:30</span><span>14:00</span><span>15:30</span></div>
+        </section>
+
+        <button class="primary-btn trade-start" id="startTrade" type="button"><span class="play">▷</span><span data-i18n="launchOperation">Lancer l’opération</span></button>
+
+        <section class="trade-result" id="tradeResult" aria-live="polite">
+          <div class="success-line"><b>✓ <span data-profit>+CHF 350</span></b><span><span data-i18n="availableBalance">Solde disponible</span>: <strong data-final-balance>CHF 2’500</strong></span></div>
+          <button class="success-btn" type="button" data-go="withdrawal">⇄ <span data-i18n="withdrawFunds">Retirer les fonds</span> <b data-profit>(CHF 350)</b> →</button>
+        </section>
+        <nav class="bottom-nav" data-active="trade"></nav>
+      </section>
+
+      <section class="view page withdrawal-page" data-view="withdrawal">
+        <header class="page-header compact">
+          <button class="icon-btn" type="button" data-go="trade" aria-label="Back">←</button>
+          <button class="icon-btn profile-btn" type="button" data-open-settings aria-label="Open settings"><svg class="person-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7.5" r="4"/><path d="M4.7 21c.6-4.2 3.3-6.5 7.3-6.5s6.7 2.3 7.3 6.5"/></svg></button>
+        </header>
+
+        <section class="balance-card withdrawal-balance">
+          <b data-final-balance>CHF 2’500</b>
+          <span data-i18n="availableBalance">Solde disponible</span>
+          <i></i>
+        </section>
+
+        <section class="section-block bank-block">
+          <h2 data-i18n="withdrawFunds">Retirer les fonds</h2>
+          <div class="bank-grid" id="bankGrid"></div>
+          <label class="amount-label"><span data-i18n="withdrawFunds">Retirer les fonds</span> (<b data-currency>CHF</b>)</label>
+          <div class="amount-input"><b data-currency>CHF</b><input id="withdrawAmount" inputmode="numeric" value="350" aria-label="Withdrawal amount" /></div>
+          <p><span data-profit>+CHF 350</span> · <span data-i18n="availableBalance">Solde disponible</span>: <b data-final-balance>CHF 2’500</b></p>
+          <button class="primary-btn" id="withdrawBtn" type="button">⇄ <span data-i18n="withdrawFunds">Retirer les fonds</span></button>
+        </section>
+
+        <section class="withdraw-success" id="withdrawSuccess" aria-live="polite">
+          <span class="bank-mini" id="successBankLogo">UBS</span>
+          <b>✓ <span data-i18n="withdrawFunds">Retirer les fonds</span></b>
+          <p data-i18n="requestSuccess">Demande enregistrée avec succès.</p>
+          <strong data-i18n="requestReceived">Demande de retrait reçue.</strong>
+        </section>
+        <nav class="bottom-nav" data-active="withdraw"></nav>
+      </section>
+
+      <div class="processing" id="processing" role="dialog" aria-modal="true" aria-live="polite">
+        <div class="processing-card">
+          <span class="spinner"></span>
+          <h2 data-i18n="processing">Traitement de l’opération…</h2>
+          <p data-i18n="processingSub">Connexion à l’algorithme Quantum AI et analyse des marchés en temps réel…</p>
+          <div class="progress-track"><i></i></div>
+        </div>
+      </div>
+
+      <aside class="settings" id="settings" role="dialog" aria-modal="true" aria-labelledby="settingsTitle">
+        <button class="settings-backdrop" type="button" data-close-settings aria-label="Close settings"></button>
+        <div class="settings-sheet">
+          <div class="sheet-handle"></div>
+          <div class="settings-title"><div><small>QuantumAI</small><h2 id="settingsTitle" data-i18n="settings">Paramètres</h2></div><button type="button" data-close-settings>×</button></div>
+
+          <label class="field"><span data-i18n="regionLanguage">Langue et région</span><select id="localeSelect">
+            <option value="ch">Français · Suisse</option>
+            <option value="pt">Português · Portugal</option>
+            <option value="de">Deutsch · Deutschland</option>
+            <option value="gb">English · United Kingdom</option>
+            <option value="it">Italiano · Italia</option>
+            <option value="us">English · United States</option>
+          </select></label>
+
+          <div class="settings-grid">
+            <label class="field"><span data-i18n="startAmount">Montant initial</span><input id="startAmount" type="number" min="100" step="50" value="2150" /></label>
+            <label class="field"><span data-i18n="endAmount">Montant final</span><input id="endAmount" type="number" min="101" step="50" value="2500" /></label>
+          </div>
+
+          <label class="field range-field"><span><b data-i18n="chartSpeed">Durée du graphique</b><strong id="durationValue">8 s</strong></span><input id="tradeDuration" type="range" min="5" max="40" step="1" value="8" /></label>
+
+          <label class="toggle-row"><span><b data-i18n="currencyBefore">Devise avant le montant</b><small id="currencyPreview">CHF 2’500</small></span><input id="currencyBefore" type="checkbox" checked /><i></i></label>
+
+          <section class="bank-settings">
+            <div class="bank-settings-head"><span><b data-i18n="visibleBanks">Banques visibles</b><small data-i18n="bankIconsHint">Activez les banques et remplacez leurs icônes.</small></span></div>
+            <div class="bank-settings-list" id="bankSettingsList"></div>
+          </section>
+
+          <button class="primary-btn save-settings" id="saveSettings" type="button" data-i18n="save">Enregistrer</button>
+          <p class="demo-note" data-i18n="demoNote">Interface de démonstration — aucune opération financière réelle.</p>
+        </div>
+      </aside>
+
+      <div class="ios-notification" id="notification" role="status">
+        <div class="notification-head"><span class="notification-logo" id="notificationLogo">UBS</span><b id="notificationBank">UBS</b><small data-i18n="now">maintenant</small></div>
+        <strong data-i18n="transferReceived">Virement reçu</strong>
+        <p id="notificationText">+CHF 350 crédités avec succès sur votre compte bancaire.</p>
+      </div>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
