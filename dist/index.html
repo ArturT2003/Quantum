@@ -4,30 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="theme-color" content="#f7f8ff" />
-    <meta name="description" content="QuantumAI interactive mobile trading interface demo" />
-    <title>QuantumAI — Trading Demo</title>
-    <link rel="icon" type="image/png" sizes="1254x1254" href="./favicon-qai.png" />
-    <link rel="apple-touch-icon" href="./favicon-qai.png" />
+    <meta name="description" content="Lux Matrix mobile trading interface demo" />
+    <title>Lux Matrix</title>
+    <link rel="icon" type="image/png" sizes="463x539" href="./favicon-lm.png" />
+    <link rel="apple-touch-icon" href="./favicon-lm.png" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <main class="device-shell" id="app">
-      <div class="status-bar" aria-hidden="true">
-        <span class="status-left"><b id="clock">17:08</b><svg class="moon-icon" viewBox="0 0 24 24"><path d="M20.3 15.8A8.7 8.7 0 0 1 8.2 3.7 8.8 8.8 0 1 0 20.3 15.8Z"/></svg></span>
-        <span class="status-right">
-          <span class="cellular"><i></i><i></i><i></i><i></i></span>
-          <svg class="wifi-icon" viewBox="0 0 24 24"><path d="M1.5 8.8C7.4 3.6 16.6 3.6 22.5 8.8l-2.7 2.9C15.5 7.9 8.5 7.9 4.2 11.7L1.5 8.8Zm5.3 5.3c2.9-2.5 7.5-2.5 10.4 0l-2.6 2.8c-1.4-1.2-3.8-1.2-5.2 0l-2.6-2.8ZM10.4 19.5a1.6 1.6 0 1 1 3.2 0 1.6 1.6 0 0 1-3.2 0Z"/></svg>
-          <span class="battery"><i class="battery-level"></i><b>26</b></span>
-        </span>
-      </div>
-
-      <section class="view splash active" data-view="splash" aria-label="QuantumAI loading screen">
+      <section class="view splash active" data-view="splash" aria-label="Lux Matrix loading screen">
         <div class="splash-orb orb-one"></div>
         <div class="splash-orb orb-two"></div>
-        <div class="brand-lockup">
-          <span class="wallet-mark"><i></i></span>
-          <span>Quantum<span>AI</span></span>
-        </div>
+        <img class="splash-logo" src="./assets/lux-matrix-logo.png" alt="Lux Matrix" />
         <div class="splash-progress"><i></i></div>
       </section>
 
@@ -41,7 +29,7 @@
 
         <article class="hero-card">
           <div class="hero-glow"></div>
-          <p data-i18n="heroKicker">QUANTUM AI · BOURSE INTELLIGENTE</p>
+          <p data-i18n="heroKicker">Lux Matrix · BOURSE INTELLIGENTE</p>
           <h1 data-i18n="heroTitle">INVESTISSEZ DANS<br />VOTRE AVENIR</h1>
           <h2 data-i18n="heroSubtitle">La plateforme d’investissement automatisé par l’IA.</h2>
           <button class="white-cta" type="button" data-go="dashboard">
@@ -183,7 +171,7 @@
         <div class="processing-card">
           <span class="spinner"></span>
           <h2 data-i18n="processing">Traitement de l’opération…</h2>
-          <p data-i18n="processingSub">Connexion à l’algorithme Quantum AI et analyse des marchés en temps réel…</p>
+          <p data-i18n="processingSub">Connexion à l’algorithme Lux Matrix et analyse des marchés en temps réel…</p>
           <div class="progress-track"><i></i></div>
         </div>
       </div>
@@ -192,7 +180,7 @@
         <button class="settings-backdrop" type="button" data-close-settings aria-label="Close settings"></button>
         <div class="settings-sheet">
           <div class="sheet-handle"></div>
-          <div class="settings-title"><div><small>QuantumAI</small><h2 id="settingsTitle" data-i18n="settings">Paramètres</h2></div><button type="button" data-close-settings>×</button></div>
+          <div class="settings-title"><div><small>Lux Matrix</small><h2 id="settingsTitle" data-i18n="settings">Paramètres</h2></div><button type="button" data-close-settings>×</button></div>
 
           <label class="field"><span data-i18n="regionLanguage">Langue et région</span><select id="localeSelect">
             <option value="ch">Français · Suisse</option>

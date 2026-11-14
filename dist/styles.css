@@ -31,38 +31,6 @@ button { -webkit-tap-highlight-color: transparent; }
   box-shadow: 0 0 70px rgba(26, 33, 89, .14);
 }
 
-.status-bar {
-  position: fixed;
-  z-index: 80;
-  top: 0;
-  left: 50%;
-  width: min(100%, 480px);
-  height: 44px;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 18px 0 22px;
-  color: #080914;
-  background: rgba(255,255,255,.94);
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
-  font-weight: 700;
-  pointer-events: none;
-}
-.status-left, .status-right { display: flex; align-items: center; }
-.status-left { gap: 6px; font-size: 17px; letter-spacing: -.35px; }
-.status-left b { font-weight: 750; }
-.moon-icon { width: 16px; height: 16px; fill: #090a11; }
-.status-right { gap: 8px; }
-.cellular { display: flex; align-items: end; gap: 2px; width: 21px; height: 18px; }
-.cellular i { display: block; width: 3.5px; border-radius: 2px; background: #090a11; }
-.cellular i:nth-child(1) { height: 6px; }.cellular i:nth-child(2) { height: 10px; }.cellular i:nth-child(3) { height: 14px; }.cellular i:nth-child(4) { height: 18px; }
-.wifi-icon { width: 21px; height: 21px; fill: #090a11; }
-.battery { position: relative; isolation: isolate; display: grid; place-items: center; width: 35px; height: 17px; border: 1.5px solid #9a9ba1; border-radius: 5px; font-size: 12px; font-weight: 850; line-height: 1; overflow: visible; }
-.battery::after { content: ""; position: absolute; right: -4px; width: 2.5px; height: 7px; border-radius: 0 2px 2px 0; background: #9a9ba1; }
-.battery .battery-level { position: absolute; z-index: 0; inset: 1px; right: auto; width: 73%; border-radius: 3px; background: #ffd60a; }
-.battery b { position: relative; z-index: 1; }
-
 .view { display: none; min-height: 100svh; opacity: 0; transform: translateY(8px); }
 .view.active { display: block; animation: viewIn .42s cubic-bezier(.2,.8,.2,1) forwards; }
 @keyframes viewIn { to { opacity: 1; transform: none; } }
@@ -81,16 +49,12 @@ button { -webkit-tap-highlight-color: transparent; }
 .splash-orb { position: absolute; width: 280px; aspect-ratio: 1; border-radius: 50%; filter: blur(70px); opacity: .46; }
 .orb-one { top: -80px; left: -110px; background: #50d5ff; }
 .orb-two { right: -120px; bottom: -90px; background: #7b39ff; }
-.brand-lockup { position: relative; display: flex; align-items: center; gap: 13px; font-size: 38px; font-weight: 500; letter-spacing: -1.5px; }
-.brand-lockup > span:last-child span { font-weight: 800; }
-.wallet-mark { position: relative; display: block; width: 58px; height: 42px; border: 3px solid #fff; border-radius: 10px; }
-.wallet-mark::before { content: ""; position: absolute; width: 43px; height: 24px; border: 3px solid #fff; border-radius: 8px; top: -11px; left: 7px; transform: rotate(-10deg); }
-.wallet-mark i { position: absolute; width: 7px; height: 7px; background: #fff; border-radius: 50%; right: 6px; top: 15px; }
+.splash-logo { position: relative; z-index: 1; display: block; width: min(84%, 380px); height: auto; object-fit: contain; filter: drop-shadow(0 18px 34px rgba(6,15,76,.2)); }
 .splash-progress { position: absolute; bottom: 72px; width: 124px; height: 3px; border-radius: 3px; background: rgba(255,255,255,.24); overflow: hidden; }
 .splash-progress i { display: block; height: 100%; background: #fff; animation: splashLoad 1.7s ease both; }
 @keyframes splashLoad { from { width: 0 } to { width: 100% } }
 
-.page { padding: 46px 18px 104px; background: linear-gradient(180deg, #fff 0%, #f9faff 26%, #fff 100%); }
+.page { padding: 12px 18px 104px; background: linear-gradient(180deg, #fff 0%, #f9faff 26%, #fff 100%); }
 .page-header { display: flex; align-items: center; justify-content: space-between; min-height: 40px; margin-bottom: 4px; }
 .page-header.compact { justify-content: space-between; }
 .icon-btn { width: 44px; height: 44px; border-radius: 50%; border: 1px solid #ebedf6; background: rgba(245,246,252,.9); color: #293153; font-size: 27px; line-height: 1; cursor: pointer; }
@@ -143,7 +107,7 @@ button { -webkit-tap-highlight-color: transparent; }
 .activity-list article { display: flex; justify-content: space-between; align-items: center; min-height: 65px; padding: 10px 15px; border: 1px solid #dfe2ed; border-radius: 17px; background: rgba(255,255,255,.76); }
 .activity-list span b, .activity-list span small { display: block; }.activity-list span b { font-size: 17px; }.activity-list span small { color: #73778f; font-size: 14px; }.activity-list strong { font-size: 18px; }.negative { color: var(--red); }.positive { color: var(--green); }
 
-.trade-page { padding-top: 61px; }
+.trade-page { padding-top: 16px; }
 .trade-header { display: grid; grid-template-columns: 44px 44px 1fr auto; align-items: center; gap: 8px; }
 .stock-name b, .stock-name small { display: block; }.stock-name b { font-size: 17px; }.stock-name small { color: var(--muted); }.stock-rate { color: #159742; background: #f0f2fa; padding: 10px 12px; border-radius: 13px; font-weight: 800; }
 .trade-summary { display: grid; justify-items: center; gap: 8px; margin: 23px 0 18px; }.trade-summary span { color: #71758c; font-size: 17px; }.trade-summary b { min-width: 200px; padding: 10px 18px; text-align: center; border-radius: 16px; color: #066b2a; background: #ddf8e8; font-size: clamp(32px,10vw,46px); letter-spacing: -1.5px; transition: color .3s ease; }
@@ -159,7 +123,7 @@ button { -webkit-tap-highlight-color: transparent; }
 .success-line { display: grid; place-items: center; gap: 4px; margin-bottom: 13px; }.success-line > b { color: #087a38; font-size: 22px; }.success-line span { color: #646a83; }.success-line strong { color: var(--ink); }
 .success-btn { width: 100%; min-height: 58px; border: 0; border-radius: 15px; background: linear-gradient(135deg,#13b755,#18c85c); color: #fff; font-size: 17px; font-weight: 800; cursor: pointer; }.success-btn b { font-weight: inherit; }
 
-.withdrawal-page { padding-top: 57px; }.withdrawal-balance { min-height: 120px; margin-top: 3px; }.withdrawal-balance b { font-size: 40px; }
+.withdrawal-page { padding-top: 14px; }.withdrawal-balance { min-height: 120px; margin-top: 3px; }.withdrawal-balance b { font-size: 40px; }
 .bank-block { margin-top: 22px; }.bank-block > h2 { margin: 0 0 15px; }
 .bank-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .bank-option { position: relative; display: grid; place-items: center; align-content: center; gap: 10px; min-height: 110px; padding: 12px; border: 1px solid #dfe3ef; border-radius: 19px; background: #fff; color: var(--ink); font-weight: 800; cursor: pointer; text-align: center; }
@@ -194,7 +158,6 @@ button { -webkit-tap-highlight-color: transparent; }
 @media (min-width: 700px) {
   body { padding: 24px 0; }
   .device-shell { min-height: calc(100svh - 48px); border-radius: 34px; }
-  .status-bar { top: 24px; }
   .bottom-nav { bottom: 24px; border-radius: 0 0 34px 34px; }
   .processing, .settings { top: 24px; bottom: 24px; border-radius: 34px; overflow: hidden; }
   .ios-notification { top: 70px; }

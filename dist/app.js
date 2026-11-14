@@ -430,11 +430,6 @@ function showNotification(bank, amount) {
   notificationTimer = setTimeout(() => note.classList.remove('show'), 12000);
 }
 
-function updateClock() {
-  const now = new Date();
-  qs('#clock').textContent = now.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', hour12: false });
-}
-
 qsa('[data-go]').forEach(btn => btn.addEventListener('click', () => showView(btn.dataset.go)));
 qsa('[data-open-settings]').forEach(btn => btn.addEventListener('click', openSettings));
 qsa('[data-close-settings]').forEach(btn => btn.addEventListener('click', closeSettings));
@@ -457,6 +452,4 @@ qs('#endAmount').addEventListener('input', () => {
 window.addEventListener('resize', () => drawChart(chartProgress));
 
 applySettingsToUI();
-updateClock();
-setInterval(updateClock, 30000);
 setTimeout(() => { if (currentView === 'splash') showView('market'); }, 1850);
