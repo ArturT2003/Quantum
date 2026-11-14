@@ -41,26 +41,27 @@ const localeConfig = {
 
 const i18n = {
   fr: {
-    heroKicker: 'LUX MATRIX · BOURSE INTELLIGENTE', heroTitle: 'INVESTISSEZ DANS<br>VOTRE AVENIR', heroSubtitle: 'La plateforme d’investissement automatisé par l’IA.', startNow: 'Commencer maintenant', tradable: 'Actifs négociables', seeAll: 'Voir tout', availableBalance: 'Solde disponible', minimumDeposit: 'Dépôt minimum', launchOperation: 'Lancer l’opération', trading: 'Trading', assets: 'Actifs', withdrawal: 'Retrait', recentActivity: 'Activité récente', withdrawFunds: 'Retirer les fonds', processing: 'Traitement de l’opération…', processingSub: 'Connexion à l’algorithme Lux Matrix et analyse des marchés en temps réel…', settings: 'Paramètres', regionLanguage: 'Langue et région', startAmount: 'Montant initial', endAmount: 'Montant final', chartSpeed: 'Durée du graphique', visibleBanks: 'Banques visibles', bankIconsHint: 'Activez les banques et remplacez leurs icônes.', currencyBefore: 'Devise avant le montant', save: 'Enregistrer', requestSuccess: 'Demande enregistrée avec succès.', requestReceived: 'Demande de retrait reçue.', now: 'maintenant', transferReceived: 'Virement reçu', credited: 'crédités avec succès sur votre compte bancaire.', demoNote: 'Interface de démonstration — aucune opération financière réelle.', completed: 'Opération terminée'
+    heroKicker: 'LUX MATRIX · BOURSE INTELLIGENTE', heroTitle: 'INVESTISSEZ DANS<br>VOTRE AVENIR', heroSubtitle: 'La plateforme d’investissement automatisé par l’IA.', startNow: 'Commencer maintenant', tradable: 'Actifs négociables', seeAll: 'Voir tout', availableBalance: 'Solde disponible', minimumDeposit: 'Dépôt minimum', launchOperation: 'Lancer l’opération', trading: 'Trading', assets: 'Actifs', withdrawal: 'Retrait', recentActivity: 'Activité récente', withdrawFunds: 'Retirer les fonds', processing: 'Traitement de l’opération…', processingSub: 'Connexion à l’algorithme Lux Matrix et analyse des marchés en temps réel…', settings: 'Paramètres', regionLanguage: 'Langue et région', currencyLabel: 'Devise pour cette langue', startAmount: 'Montant initial', endAmount: 'Montant final', chartSpeed: 'Durée du graphique', visibleBanks: 'Banques visibles', bankIconsHint: 'Activez les banques et remplacez leurs icônes.', currencyBefore: 'Devise avant le montant', save: 'Enregistrer', requestSuccess: 'Demande enregistrée avec succès.', requestReceived: 'Demande de retrait reçue.', now: 'maintenant', transferReceived: 'Virement reçu', credited: 'crédités avec succès sur votre compte bancaire.', demoNote: 'Interface de démonstration — aucune opération financière réelle.', completed: 'Opération terminée'
   },
   pt: {
-    heroKicker: 'LUX MATRIX · MERCADO INTELIGENTE', heroTitle: 'INVISTA NO SEU<br>FUTURO', heroSubtitle: 'A plataforma de investimento automatizado por IA.', startNow: 'Começar agora', tradable: 'Ativos negociáveis', seeAll: 'Ver tudo', availableBalance: 'Saldo disponível', minimumDeposit: 'Depósito mínimo', launchOperation: 'Iniciar operação', trading: 'Trading', assets: 'Ativos', withdrawal: 'Levantar', recentActivity: 'Atividade recente', withdrawFunds: 'Levantar fundos', processing: 'A processar a operação…', processingSub: 'Ligação ao algoritmo Lux Matrix e análise dos mercados em tempo real…', settings: 'Definições', regionLanguage: 'Idioma e região', startAmount: 'Montante inicial', endAmount: 'Montante final', chartSpeed: 'Duração do gráfico', visibleBanks: 'Bancos visíveis', bankIconsHint: 'Ative bancos e substitua os seus ícones.', currencyBefore: 'Moeda antes do valor', save: 'Guardar', requestSuccess: 'Pedido registado com sucesso.', requestReceived: 'Pedido de levantamento recebido.', now: 'agora', transferReceived: 'Transferência recebida', credited: 'creditados com sucesso na sua conta bancária.', demoNote: 'Interface de demonstração — não realiza operações financeiras reais.', completed: 'Operação concluída'
+    heroKicker: 'LUX MATRIX · MERCADO INTELIGENTE', heroTitle: 'INVISTA NO SEU<br>FUTURO', heroSubtitle: 'A plataforma de investimento automatizado por IA.', startNow: 'Começar agora', tradable: 'Ativos negociáveis', seeAll: 'Ver tudo', availableBalance: 'Saldo disponível', minimumDeposit: 'Depósito mínimo', launchOperation: 'Iniciar operação', trading: 'Trading', assets: 'Ativos', withdrawal: 'Levantar', recentActivity: 'Atividade recente', withdrawFunds: 'Levantar fundos', processing: 'A processar a operação…', processingSub: 'Ligação ao algoritmo Lux Matrix e análise dos mercados em tempo real…', settings: 'Definições', regionLanguage: 'Idioma e região', currencyLabel: 'Moeda para este idioma', startAmount: 'Montante inicial', endAmount: 'Montante final', chartSpeed: 'Duração do gráfico', visibleBanks: 'Bancos visíveis', bankIconsHint: 'Ative bancos e substitua os seus ícones.', currencyBefore: 'Moeda antes do valor', save: 'Guardar', requestSuccess: 'Pedido registado com sucesso.', requestReceived: 'Pedido de levantamento recebido.', now: 'agora', transferReceived: 'Transferência recebida', credited: 'creditados com sucesso na sua conta bancária.', demoNote: 'Interface de demonstração — não realiza operações financeiras reais.', completed: 'Operação concluída'
   },
   de: {
-    heroKicker: 'LUX MATRIX · INTELLIGENTER HANDEL', heroTitle: 'INVESTIEREN SIE IN<br>IHRE ZUKUNFT', heroSubtitle: 'Die offizielle KI-gestützte Investmentplattform.', startNow: 'Jetzt starten', tradable: 'Handelbare Werte', seeAll: 'Alle anzeigen', availableBalance: 'Verfügbares Guthaben', minimumDeposit: 'Mindesteinzahlung', launchOperation: 'Handel starten', trading: 'Trading', assets: 'Werte', withdrawal: 'Auszahlen', recentActivity: 'Letzte Aktivitäten', withdrawFunds: 'Geld auszahlen', processing: 'Vorgang wird verarbeitet…', processingSub: 'Verbindung mit Lux Matrix und Echtzeitanalyse der Märkte…', settings: 'Einstellungen', regionLanguage: 'Sprache und Region', startAmount: 'Startbetrag', endAmount: 'Endbetrag', chartSpeed: 'Chart-Dauer', visibleBanks: 'Sichtbare Banken', bankIconsHint: 'Banken aktivieren und eigene Symbole hochladen.', currencyBefore: 'Währung vor dem Betrag', save: 'Speichern', requestSuccess: 'Anfrage erfolgreich gespeichert.', requestReceived: 'Auszahlungsanfrage erhalten.', now: 'jetzt', transferReceived: 'Überweisung erhalten', credited: 'wurden Ihrem Bankkonto erfolgreich gutgeschrieben.', demoNote: 'Demo-Oberfläche — keine echten Finanztransaktionen.', completed: 'Handel abgeschlossen'
+    heroKicker: 'LUX MATRIX · INTELLIGENTER HANDEL', heroTitle: 'INVESTIEREN SIE IN<br>IHRE ZUKUNFT', heroSubtitle: 'Die offizielle KI-gestützte Investmentplattform.', startNow: 'Jetzt starten', tradable: 'Handelbare Werte', seeAll: 'Alle anzeigen', availableBalance: 'Verfügbares Guthaben', minimumDeposit: 'Mindesteinzahlung', launchOperation: 'Handel starten', trading: 'Trading', assets: 'Werte', withdrawal: 'Auszahlen', recentActivity: 'Letzte Aktivitäten', withdrawFunds: 'Geld auszahlen', processing: 'Vorgang wird verarbeitet…', processingSub: 'Verbindung mit Lux Matrix und Echtzeitanalyse der Märkte…', settings: 'Einstellungen', regionLanguage: 'Sprache und Region', currencyLabel: 'Währung für diese Sprache', startAmount: 'Startbetrag', endAmount: 'Endbetrag', chartSpeed: 'Chart-Dauer', visibleBanks: 'Sichtbare Banken', bankIconsHint: 'Banken aktivieren und eigene Symbole hochladen.', currencyBefore: 'Währung vor dem Betrag', save: 'Speichern', requestSuccess: 'Anfrage erfolgreich gespeichert.', requestReceived: 'Auszahlungsanfrage erhalten.', now: 'jetzt', transferReceived: 'Überweisung erhalten', credited: 'wurden Ihrem Bankkonto erfolgreich gutgeschrieben.', demoNote: 'Demo-Oberfläche — keine echten Finanztransaktionen.', completed: 'Handel abgeschlossen'
   },
   en: {
-    heroKicker: 'LUX MATRIX · SMART TRADING', heroTitle: 'INVEST IN<br>YOUR FUTURE', heroSubtitle: 'The official AI-powered automated investment platform.', startNow: 'Get started', tradable: 'Tradable assets', seeAll: 'See all', availableBalance: 'Available balance', minimumDeposit: 'Minimum deposit', launchOperation: 'Launch operation', trading: 'Trading', assets: 'Assets', withdrawal: 'Withdraw', recentActivity: 'Recent activity', withdrawFunds: 'Withdraw funds', processing: 'Processing operation…', processingSub: 'Connecting to Lux Matrix and analysing markets in real time…', settings: 'Settings', regionLanguage: 'Language and region', startAmount: 'Starting amount', endAmount: 'Final amount', chartSpeed: 'Chart duration', visibleBanks: 'Visible banks', bankIconsHint: 'Enable banks and upload replacement icons.', currencyBefore: 'Currency before amount', save: 'Save settings', requestSuccess: 'Request registered successfully.', requestReceived: 'Withdrawal request received.', now: 'now', transferReceived: 'Transfer received', credited: 'successfully credited to your bank account.', demoNote: 'Demonstration interface — no real financial transactions.', completed: 'Operation completed'
+    heroKicker: 'LUX MATRIX · SMART TRADING', heroTitle: 'INVEST IN<br>YOUR FUTURE', heroSubtitle: 'The official AI-powered automated investment platform.', startNow: 'Get started', tradable: 'Tradable assets', seeAll: 'See all', availableBalance: 'Available balance', minimumDeposit: 'Minimum deposit', launchOperation: 'Launch operation', trading: 'Trading', assets: 'Assets', withdrawal: 'Withdraw', recentActivity: 'Recent activity', withdrawFunds: 'Withdraw funds', processing: 'Processing operation…', processingSub: 'Connecting to Lux Matrix and analysing markets in real time…', settings: 'Settings', regionLanguage: 'Language and region', currencyLabel: 'Currency for this language', startAmount: 'Starting amount', endAmount: 'Final amount', chartSpeed: 'Chart duration', visibleBanks: 'Visible banks', bankIconsHint: 'Enable banks and upload replacement icons.', currencyBefore: 'Currency before amount', save: 'Save settings', requestSuccess: 'Request registered successfully.', requestReceived: 'Withdrawal request received.', now: 'now', transferReceived: 'Transfer received', credited: 'successfully credited to your bank account.', demoNote: 'Demonstration interface — no real financial transactions.', completed: 'Operation completed'
   },
   it: {
-    heroKicker: 'LUX MATRIX · TRADING INTELLIGENTE', heroTitle: 'INVESTI NEL<br>TUO FUTURO', heroSubtitle: 'La piattaforma di investimento automatizzata dall’IA.', startNow: 'Inizia ora', tradable: 'Asset negoziabili', seeAll: 'Vedi tutto', availableBalance: 'Saldo disponibile', minimumDeposit: 'Deposito minimo', launchOperation: 'Avvia operazione', trading: 'Trading', assets: 'Asset', withdrawal: 'Prelievo', recentActivity: 'Attività recente', withdrawFunds: 'Preleva fondi', processing: 'Elaborazione operazione…', processingSub: 'Connessione a Lux Matrix e analisi dei mercati in tempo reale…', settings: 'Impostazioni', regionLanguage: 'Lingua e regione', startAmount: 'Importo iniziale', endAmount: 'Importo finale', chartSpeed: 'Durata del grafico', visibleBanks: 'Banche visibili', bankIconsHint: 'Attiva le banche e carica icone personalizzate.', currencyBefore: 'Valuta prima dell’importo', save: 'Salva', requestSuccess: 'Richiesta registrata con successo.', requestReceived: 'Richiesta di prelievo ricevuta.', now: 'adesso', transferReceived: 'Bonifico ricevuto', credited: 'accreditati con successo sul tuo conto bancario.', demoNote: 'Interfaccia dimostrativa — nessuna operazione finanziaria reale.', completed: 'Operazione completata'
+    heroKicker: 'LUX MATRIX · TRADING INTELLIGENTE', heroTitle: 'INVESTI NEL<br>TUO FUTURO', heroSubtitle: 'La piattaforma di investimento automatizzata dall’IA.', startNow: 'Inizia ora', tradable: 'Asset negoziabili', seeAll: 'Vedi tutto', availableBalance: 'Saldo disponibile', minimumDeposit: 'Deposito minimo', launchOperation: 'Avvia operazione', trading: 'Trading', assets: 'Asset', withdrawal: 'Prelievo', recentActivity: 'Attività recente', withdrawFunds: 'Preleva fondi', processing: 'Elaborazione operazione…', processingSub: 'Connessione a Lux Matrix e analisi dei mercati in tempo reale…', settings: 'Impostazioni', regionLanguage: 'Lingua e regione', currencyLabel: 'Valuta per questa lingua', startAmount: 'Importo iniziale', endAmount: 'Importo finale', chartSpeed: 'Durata del grafico', visibleBanks: 'Banche visibili', bankIconsHint: 'Attiva le banche e carica icone personalizzate.', currencyBefore: 'Valuta prima dell’importo', save: 'Salva', requestSuccess: 'Richiesta registrata con successo.', requestReceived: 'Richiesta di prelievo ricevuta.', now: 'adesso', transferReceived: 'Bonifico ricevuto', credited: 'accreditati con successo sul tuo conto bancario.', demoNote: 'Interfaccia dimostrativa — nessuna operazione finanziaria reale.', completed: 'Operazione completata'
   }
 };
 
 const languageForLocale = { ch: 'fr', pt: 'pt', de: 'de', gb: 'en', it: 'it', us: 'en' };
-const defaultSettings = { locale: 'ch', start: 2150, end: 2500, duration: 8, currencyBefore: true, bankPrefs: {} };
+const defaultSettings = { locale: 'ch', start: 2150, end: 2500, duration: 8, currencyBefore: true, currencyPrefs: {}, bankPrefs: {} };
 let settings = loadSettings();
 let draftBankPrefs = JSON.parse(JSON.stringify(settings.bankPrefs || {}));
+let draftCurrencyPrefs = { ...(settings.currencyPrefs || {}) };
 let currentView = 'splash';
 let selectedBank = 0;
 let chartData = [];
@@ -79,17 +80,22 @@ function loadSettings() {
 function getCopy() { return i18n[languageForLocale[settings.locale]] || i18n.en; }
 function getLocale() { return localeConfig[settings.locale] || localeConfig.ch; }
 
+function getCurrencySymbol(localeKey = settings.locale, source = settings.currencyPrefs) {
+  const fallback = (localeConfig[localeKey] || localeConfig.ch).symbol;
+  return String(source?.[localeKey] || '').trim().slice(0, 12) || fallback;
+}
+
 function groupedNumber(value) {
   const rounded = Math.round(Number(value) || 0);
   return new Intl.NumberFormat(getLocale().lang, { maximumFractionDigits: 0 }).format(rounded).replace(/[\s\u00a0\u202f]/g, '’');
 }
 
 function money(value, signed = false) {
-  const cfg = getLocale();
+  const symbol = getCurrencySymbol();
   const n = Math.round(Number(value) || 0);
   const sign = signed && n > 0 ? '+' : n < 0 ? '−' : '';
   const amount = groupedNumber(Math.abs(n));
-  return settings.currencyBefore ? `${sign}${cfg.symbol} ${amount}` : `${sign}${amount} ${cfg.symbol}`;
+  return settings.currencyBefore ? `${sign}${symbol} ${amount}` : `${sign}${amount} ${symbol}`;
 }
 
 function investmentAmount() { return Math.max(50, Math.min(200, Math.round(settings.start * .1 / 50) * 50)); }
@@ -138,10 +144,11 @@ function applySettingsToUI() {
   qsa('[data-investment]').forEach(el => el.textContent = money(investmentAmount()));
   qsa('[data-profit]').forEach(el => el.textContent = money(settings.end - settings.start, true));
   qsa('[data-chart-goal]').forEach(el => el.textContent = money(settings.end));
-  qsa('[data-currency]').forEach(el => el.textContent = cfg.symbol);
+  qsa('[data-currency]').forEach(el => el.textContent = getCurrencySymbol());
   qsa('[data-activity-value]').forEach(el => el.textContent = money(Number(el.dataset.activityValue), true));
   qs('#withdrawAmount').value = Math.max(0, settings.end - settings.start);
   qs('#localeSelect').value = settings.locale;
+  qs('#currencyInput').value = getCurrencySymbol();
   qs('#startAmount').value = settings.start;
   qs('#endAmount').value = settings.end;
   qs('#tradeDuration').value = settings.duration;
@@ -257,7 +264,9 @@ function resizeBankIcon(file) {
 
 function openSettings() {
   draftBankPrefs = JSON.parse(JSON.stringify(settings.bankPrefs || {}));
+  draftCurrencyPrefs = { ...(settings.currencyPrefs || {}) };
   qs('#localeSelect').value = settings.locale;
+  qs('#currencyInput').value = getCurrencySymbol(settings.locale, draftCurrencyPrefs);
   qs('#startAmount').value = settings.start;
   qs('#endAmount').value = settings.end;
   qs('#tradeDuration').value = settings.duration;
@@ -272,6 +281,9 @@ function saveSettings() {
   const start = Math.max(100, Number(qs('#startAmount').value) || defaultSettings.start);
   const requestedEnd = Number(qs('#endAmount').value) || defaultSettings.end;
   const locale = qs('#localeSelect').value;
+  const enteredCurrency = qs('#currencyInput').value.trim().slice(0, 12);
+  if (enteredCurrency) draftCurrencyPrefs[locale] = enteredCurrency;
+  else delete draftCurrencyPrefs[locale];
   if (!draftBankPrefs[locale]) draftBankPrefs[locale] = {};
   const localeBanks = localeConfig[locale].banks;
   const hasVisible = localeBanks.some((_, index) => getBankPreference(locale, index, draftBankPrefs).visible !== false);
@@ -282,6 +294,7 @@ function saveSettings() {
     end: Math.max(start + 50, requestedEnd),
     duration: Math.max(5, Math.min(40, Number(qs('#tradeDuration').value) || defaultSettings.duration)),
     currencyBefore: qs('#currencyBefore').checked,
+    currencyPrefs: draftCurrencyPrefs,
     bankPrefs: draftBankPrefs
   };
   localStorage.setItem(APP_KEY, JSON.stringify(settings));
@@ -438,16 +451,24 @@ qs('#prepareTrade').addEventListener('click', prepareTrade);
 qs('#startTrade').addEventListener('click', startTrade);
 qs('#withdrawBtn').addEventListener('click', submitWithdrawal);
 qs('#localeSelect').addEventListener('change', event => {
-  const previewSettings = { ...settings, locale: event.target.value, currencyBefore: qs('#currencyBefore').checked };
+  qs('#currencyInput').value = getCurrencySymbol(event.target.value, draftCurrencyPrefs);
+  const previewSettings = { ...settings, locale: event.target.value, currencyBefore: qs('#currencyBefore').checked, currencyPrefs: draftCurrencyPrefs };
   const old = settings; settings = previewSettings; qs('#currencyPreview').textContent = money(qs('#endAmount').value); settings = old;
   renderBankSettings(event.target.value);
 });
+qs('#currencyInput').addEventListener('input', event => {
+  const locale = qs('#localeSelect').value;
+  const value = event.target.value.trim().slice(0, 12);
+  if (value) draftCurrencyPrefs[locale] = value;
+  else delete draftCurrencyPrefs[locale];
+  const old = settings; settings = { ...settings, locale, currencyBefore: qs('#currencyBefore').checked, currencyPrefs: draftCurrencyPrefs }; qs('#currencyPreview').textContent = money(qs('#endAmount').value); settings = old;
+});
 qs('#tradeDuration').addEventListener('input', event => { qs('#durationValue').textContent = `${event.target.value} s`; });
 qs('#currencyBefore').addEventListener('change', event => {
-  const old = settings; settings = { ...settings, locale: qs('#localeSelect').value, currencyBefore: event.target.checked }; qs('#currencyPreview').textContent = money(qs('#endAmount').value); settings = old;
+  const old = settings; settings = { ...settings, locale: qs('#localeSelect').value, currencyBefore: event.target.checked, currencyPrefs: draftCurrencyPrefs }; qs('#currencyPreview').textContent = money(qs('#endAmount').value); settings = old;
 });
 qs('#endAmount').addEventListener('input', () => {
-  const old = settings; settings = { ...settings, locale: qs('#localeSelect').value, currencyBefore: qs('#currencyBefore').checked }; qs('#currencyPreview').textContent = money(qs('#endAmount').value); settings = old;
+  const old = settings; settings = { ...settings, locale: qs('#localeSelect').value, currencyBefore: qs('#currencyBefore').checked, currencyPrefs: draftCurrencyPrefs }; qs('#currencyPreview').textContent = money(qs('#endAmount').value); settings = old;
 });
 window.addEventListener('resize', () => drawChart(chartProgress));
 
